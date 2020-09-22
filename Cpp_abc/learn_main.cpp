@@ -1,7 +1,7 @@
 #include<iostream>
 
-int main() {
-	int a = 0, b = 0, c = 0;
+void learn_PP(int a) {
+	int b = 0, c = 0;
 
 	while (a < 10) {
 		/*
@@ -24,6 +24,34 @@ int main() {
 	}
 	std::cout << std::endl;
 
-	system("pause");
+}
+
+
+int main() {
+	int a = 0;
+
+	std::cout << "输入一个数：" << std::endl;
+
+	while (!(std::cin >> a)) {
+		std::cout << "数字必须为整数！" << std::endl;
+		std::cin >> a;
+		if (a) {
+			break;
+		}
+	}
+
+	while (a > 10 || a < 0) {
+		std::cout << "a为小于10的整数！" << std::endl;
+		std::cin >> a;
+
+		if (a < 10 && a > 0) {
+			break;
+		}
+	}
+
+	learn_PP(a);
+	
+	// 基本代码
+	// system("pause");
 	return 0;
 }
