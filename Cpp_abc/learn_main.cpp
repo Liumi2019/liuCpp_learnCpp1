@@ -28,20 +28,18 @@ void learn_PP(int a) {
 
 
 int main() {
-	int a = 0;
+
+	int a = 0, d = 0;
 
 	std::cout << "输入一个数：" << std::endl;
 
-	while (!(std::cin >> a)) {
+	if (!(std::cin >> a)) {
 		std::cout << "数字必须为整数！" << std::endl;
 		std::cin >> a;
-		if (a) {
-			break;
-		}
 	}
 
 	while (a > 10 || a < 0) {
-		std::cout << "a为小于10的整数！" << std::endl;
+		std::cout << "a为小于10的正整数！" << std::endl;
 		std::cin >> a;
 
 		if (a < 10 && a > 0) {
