@@ -1,6 +1,37 @@
 #include<iostream>
 
-void learn_PP(int a) {
+void learn_while_PP(int);
+void learn_for_PP(int);
+
+
+int main() {
+
+	int a = 0, d = 0;
+
+	std::cout << "输入一个数：" << std::endl;
+
+	
+	if (std::cin >> a) {
+	
+	}
+	else {
+		std::cout << "a为小于10的正整数！" << std::endl;
+		std::cout << "a取默认值：0" << std::endl;
+	}
+
+
+
+	// learn_for_PP(a);
+	// learn_while_PP(a);
+	
+	// 基本代码
+	// system("pause");
+	return 0;
+}
+
+
+// while语句与左右"++"运算符
+void learn_while_PP(int a) {
 	int b = 0, c = 0;
 
 	while (a < 10) {
@@ -26,30 +57,32 @@ void learn_PP(int a) {
 
 }
 
+// for语句与左右"++"运算符
+void learn_for_PP(int a) {
 
-int main() {
+	int b = 0, c = 0;
 
-	int a = 0, d = 0;
-
-	std::cout << "输入一个数：" << std::endl;
-
-	if (!(std::cin >> a)) {
-		std::cout << "数字必须为整数！" << std::endl;
-		std::cin >> a;
+	for (; a < 10; ++a) {
+		b = ++a;
+		c = a++;
+		std::cout << "a=" << a << std::endl;
+		std::cout << "b=" << b << std::endl;
+		std::cout << "c=" << c << std::endl;
 	}
 
-	while (a > 10 || a < 0) {
-		std::cout << "a为小于10的正整数！" << std::endl;
-		std::cin >> a;
+	std::cout << "另一个for语句" << std::endl;
 
-		if (a < 10 && a > 0) {
-			break;
-		}
+	a = 0;
+
+	for (; a < 10; a++) {
+		b = ++a;
+		c = a++;
+
+		std::cout << "a=" << a << std::endl;
+		std::cout << "b=" << b << std::endl;
+		std::cout << "c=" << c << std::endl;
 	}
 
-	learn_PP(a);
-	
-	// 基本代码
-	// system("pause");
-	return 0;
+
+
 }
