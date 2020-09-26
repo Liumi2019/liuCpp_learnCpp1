@@ -140,6 +140,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="learn_main.cpp" />
+    <ClCompile Include="my_Learn_Fun.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="my_Learn_Fun.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

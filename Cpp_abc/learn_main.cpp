@@ -1,25 +1,23 @@
 #include<iostream>
-
-void learn_while_PP(int);
-void learn_for_PP(int);
+#include"my_Learn_Fun.h"
 
 
 int main() {
 
-	int a = 0, d = 0;
+	int i, *p = &i;
+	int &r = *p;
 
-	std::cout << "输入一个数：" << std::endl;
+	i = 1;
+	p = nullptr;
 
-	
-	if (std::cin >> a) {
-	
-	}
-	else {
-		std::cout << "a为小于10的正整数！" << std::endl;
-		std::cout << "a取默认值：0" << std::endl;
-	}
+	std::cout << i << "\n" << "\n" << r << std::endl;
 
 
+	// int a = 0;
+
+	//a = input_a(a);
+
+	// reference_yu(a);
 
 	// learn_for_PP(a);
 	// learn_while_PP(a);
@@ -27,62 +25,4 @@ int main() {
 	// 基本代码
 	// system("pause");
 	return 0;
-}
-
-
-// while语句与左右"++"运算符
-void learn_while_PP(int a) {
-	int b = 0, c = 0;
-
-	while (a < 10) {
-		/*
-		++a，先加1赋值
-		打印：1,2,3,4,5，..., 10
-		*/
-		b = ++a;
-		std::cout << b;
-	}
-	std::cout << std::endl;
-
-	a = 0;
-	while (a < 10) {
-		/*
-		a++，先赋值, 后加1
-		打印：0,1,2,3,4,5，...,9
-		*/
-		c = a++;
-		std::cout << c;
-	}
-	std::cout << std::endl;
-
-}
-
-// for语句与左右"++"运算符
-void learn_for_PP(int a) {
-
-	int b = 0, c = 0;
-
-	for (; a < 10; ++a) {
-		b = ++a;
-		c = a++;
-		std::cout << "a=" << a << std::endl;
-		std::cout << "b=" << b << std::endl;
-		std::cout << "c=" << c << std::endl;
-	}
-
-	std::cout << "另一个for语句" << std::endl;
-
-	a = 0;
-
-	for (; a < 10; a++) {
-		b = ++a;
-		c = a++;
-
-		std::cout << "a=" << a << std::endl;
-		std::cout << "b=" << b << std::endl;
-		std::cout << "c=" << c << std::endl;
-	}
-
-
-
 }
