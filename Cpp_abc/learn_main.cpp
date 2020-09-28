@@ -11,7 +11,7 @@ int main() {
 
 	const int ii = 4;
 	const auto e = i;
-
+	
 	c = &ii;
 	a = 5;
 	b = 10;
