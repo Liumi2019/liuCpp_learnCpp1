@@ -12,8 +12,6 @@ int main() {
 	const int ii = 4;
 	const auto e = i;
 
-	e = 5;
-
 	c = &ii;
 	a = 5;
 	b = 10;
