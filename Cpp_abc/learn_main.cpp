@@ -4,13 +4,22 @@
 
 int main() {
 
-	int i, *p = &i;
-	int &r = *p;
+	const int i = 5, &ci = i;
+	auto a = i;
+	auto b = ci;
+	auto c = &i;
 
-	i = 1;
-	p = nullptr;
+	const int ii = 4;
+	const auto e = i;
 
-	std::cout << i << "\n" << "\n" << r << std::endl;
+	e = 5;
+
+	c = &ii;
+	a = 5;
+	b = 10;
+
+
+	std::cout << i << "\n" << c << std::endl;
 
 
 	// int a = 0;
