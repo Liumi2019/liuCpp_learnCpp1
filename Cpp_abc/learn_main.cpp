@@ -1,25 +1,26 @@
 #include<iostream>
 #include"my_Learn_Fun.h"
+#include"Sales_data.h"
 
 
 int main() {
 
-	const int i = 5, &ci = i;
-	auto a = i;
-	auto b = ci;
-	auto c = &i;
+	Sales_data book1, book2;
 
-	const int ii = 4;
-	const auto e = i;
+	book1.book_note = "1234";
+	book1.revenue = 1.5;
+	book1.units_sold = 20;
+
+	book2.book_note = "5678";
+	book2.revenue = 50;
+	book2.units_sold = 10;
+
+	std::cout << "一共" << book1.units_sold + book2.units_sold << "本书"
+		<< "总价格为：" << book1.revenue * book1.units_sold + book2.revenue * book2.units_sold
+		<< "元" << std::endl;
+
+
 	
-	c = &ii;
-	a = 5;
-	b = 10;
-
-
-	std::cout << i << "\n" << c << std::endl;
-
-
 	// int a = 0;
 
 	//a = input_a(a);

@@ -141,9 +141,11 @@
   <ItemGroup>
     <ClCompile Include="learn_main.cpp" />
     <ClCompile Include="my_Learn_Fun.cpp" />
+    <ClCompile Include="Sales_data.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="my_Learn_Fun.h" />
+    <ClInclude Include="Sales_data.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

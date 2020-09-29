@@ -21,9 +21,15 @@
     <ClCompile Include="my_Learn_Fun.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Sales_data.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="my_Learn_Fun.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Sales_data.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
