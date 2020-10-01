@@ -2,9 +2,11 @@
 
 #include<iostream>
 #include<string>
+#include<vector>
+#include"Sales_data.h"
 
 using std::string;
-using std::string;
+using std::vector;
 using std::cout;
 using std::endl;
 using std::cin;
@@ -18,6 +20,10 @@ void reference_yu(int);
 void Sale_data(int);
 
 void string_yu(int);
+
+// ≤Àµ•¥Ú”°
+void print_mune(string mune_name, double pnt, unsigned mune_W = 40);
+void mnue_great(int);
 
 
 
